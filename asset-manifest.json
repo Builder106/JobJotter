@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jobjotter/static/css/main.0c415185.css",
-    "main.js": "/jobjotter/static/js/main.7ff01459.js",
-    "static/js/488.04d9cd9d.chunk.js": "/jobjotter/static/js/488.04d9cd9d.chunk.js",
-    "index.html": "/jobjotter/index.html",
-    "main.0c415185.css.map": "/jobjotter/static/css/main.0c415185.css.map",
-    "main.7ff01459.js.map": "/jobjotter/static/js/main.7ff01459.js.map",
-    "488.04d9cd9d.chunk.js.map": "/jobjotter/static/js/488.04d9cd9d.chunk.js.map"
+    "main.css": "/JobJotter/static/css/main.0c415185.css",
+    "main.js": "/JobJotter/static/js/main.ab284c4a.js",
+    "static/js/488.04d9cd9d.chunk.js": "/JobJotter/static/js/488.04d9cd9d.chunk.js",
+    "index.html": "/JobJotter/index.html",
+    "main.0c415185.css.map": "/JobJotter/static/css/main.0c415185.css.map",
+    "main.ab284c4a.js.map": "/JobJotter/static/js/main.ab284c4a.js.map",
+    "488.04d9cd9d.chunk.js.map": "/JobJotter/static/js/488.04d9cd9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c415185.css",
-    "static/js/main.7ff01459.js"
+    "static/js/main.ab284c4a.js"
   ]
 }
