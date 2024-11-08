@@ -1,6 +1,8 @@
 # JobJotter
 JobJotter is a simple React application to track job applications. Users can add, view, and delete job applications, which are stored in the browser's local storage.
 
+<img width="1440" alt="JobJotter" src="https://github.com/user-attachments/assets/458f5998-12a9-4329-9da2-e2b288a0a0ed">
+
 ## Getting Started
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
