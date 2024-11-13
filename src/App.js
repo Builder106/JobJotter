@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>JobJotter</h1>
+      <h1>JobJotter</h1>
       </header>
       <JobForm addApplication={addApplication} />
       <JobList applications={applications} deleteApplication={deleteApplication} />
