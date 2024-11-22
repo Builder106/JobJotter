@@ -1,24 +1,42 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import './JobForm.css';
+import { Autocomplete } from '../Autocomplete/Autocomplete';
+import '../Autocomplete/style.css';
 
 function JobForm({ addApplication }) {
   const [jobTitle, setJobTitle] = useState('');
   const [companyName, setCompanyName] = useState('');
+  const [companyLogo, setCompanyLogo] = useState('');
   const [applicationDate, setApplicationDate] = useState('');
   const [applicationStatus, setApplicationStatus] = useState('Applied');
 
+  const handleAutocompleteSubmit = ({ value, query }) => {
+    if (query) {
+      setCompanyName(query.name);
+      setCompanyLogo(query.icon);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newApplication = { jobTitle, companyName, applicationDate, applicationStatus };
-    console.log('Submitting new application:', newApplication); // Debugging line
+    const newApplication = {
+      jobTitle,
+      companyName,
+      companyLogo,
+      applicationDate,
+      applicationStatus,
+    };
     addApplication(newApplication);
     setJobTitle('');
     setCompanyName('');
+    setCompanyLogo('');
     setApplicationDate('');
     setApplicationStatus('Applied');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="job-form" onSubmit={handleSubmit}>
       <input
         type="text"
         value={jobTitle}
@@ -26,12 +44,9 @@ function JobForm({ addApplication }) {
         placeholder="Job Title"
         required
       />
-      <input
-        type="text"
-        value={companyName}
-        onChange={(e) => setCompanyName(e.target.value)}
-        placeholder="Company Name"
-        required
+      <Autocomplete
+        onSubmit={handleAutocompleteSubmit}
+        placeholder="Enter a company"
       />
       <input
         type="date"
@@ -52,5 +67,9 @@ function JobForm({ addApplication }) {
     </form>
   );
 }
+
+JobForm.propTypes = {
+  addApplication: PropTypes.func.isRequired,
+};
 
 export default JobForm;
