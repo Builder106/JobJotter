@@ -2,7 +2,7 @@
    "name": "job-jotter",
    "version": "1.0.0",
    "private": true,
-   "homepage": "https://builder106.github.io/JobJotter/",
+   "homepage": "https://builder106.github.io/JobJotter",
    "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
