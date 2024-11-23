@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JobJotter/static/css/main.0f289388.css",
+    "main.js": "/JobJotter/static/js/main.c7805b5b.js",
+    "static/js/488.04d9cd9d.chunk.js": "/JobJotter/static/js/488.04d9cd9d.chunk.js",
+    "index.html": "/JobJotter/index.html",
+    "main.0f289388.css.map": "/JobJotter/static/css/main.0f289388.css.map",
+    "main.c7805b5b.js.map": "/JobJotter/static/js/main.c7805b5b.js.map",
+    "488.04d9cd9d.chunk.js.map": "/JobJotter/static/js/488.04d9cd9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f289388.css",
+    "static/js/main.c7805b5b.js"
+  ]
+}
