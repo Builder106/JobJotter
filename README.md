@@ -49,3 +49,16 @@ To run the tests, use:
 
 `npm test`
 
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+* Create React App
+* FontAwesome
+* Styled Components
+
+## Contact
+For any inquiries, please get in touch with vaughanolayinka@gmail.com.
