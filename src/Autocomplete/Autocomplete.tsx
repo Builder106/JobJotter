@@ -45,18 +45,18 @@ import {
    const [queries, setQueries] = useState<TQuery[]>([]);
  
    const handleSubmit = (e: FormEvent) => {
-     e.preventDefault();
+      e.preventDefault();
+    
+      const text = queries?.[0]?.name || value.text;
+      onSubmit({ value: text, query: undefined, queries });
+      setValue({ text, active: false });
+      setQueries([]);
+    };
  
-     const text = queries?.[0]?.domain || value.text;
-     onSubmit({ value: text, query: undefined, queries });
-     setValue({ text, active: false });
-     setQueries([]);
-   };
- 
-   const handleClick = (query: TQuery) => {
-     onSubmit({ value: value.text, query, queries });
-     setValue({ text: query.domain, active: false });
-   };
+    const handleClick = (query: TQuery) => {
+      onSubmit({ value: query.name, query, queries });
+      setValue({ text: query.name, active: false });
+    };
  
    const reset = () => {
      setQueries([]);

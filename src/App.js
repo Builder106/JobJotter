@@ -27,6 +27,12 @@ function App() {
     setApplications(applications.filter((_, i) => i !== index));
   };
 
+  const updateApplicationStatus = (application, newStatus) => {
+    setApplications(applications.map(app => 
+      app === application ? { ...app, applicationStatus: newStatus } : app
+    ));
+  };
+
   const handleJobSearch = (e) => {
     setJobSearchQuery(e.target.value);
   };
@@ -73,7 +79,11 @@ function App() {
       </header>
       <div className="App-content">
         <JobForm addApplication={addApplication} />
-        <JobList applications={searchTriggered ? filteredApplications : applications} deleteApplication={deleteApplication} />
+        <JobList
+          applications={searchTriggered ? filteredApplications : applications}
+          deleteApplication={deleteApplication}
+          updateApplicationStatus={updateApplicationStatus}
+        />
       </div>
       <Footer />
     </div>

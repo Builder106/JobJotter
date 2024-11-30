@@ -1,9 +1,17 @@
 /* src/App.css */
 
 body {
+   overflow: auto;
+   background-color: #f0feff;
    font-family: Arial, sans-serif;
    text-align: center;
    padding: 20px;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
+.body::-webkit-scrollbar { 
+   display: none;
 }
 
 form {

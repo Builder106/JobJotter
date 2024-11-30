@@ -46,7 +46,8 @@ function JobForm({ addApplication }) {
       />
       <Autocomplete
         onSubmit={handleAutocompleteSubmit}
-        placeholder="Enter a company"
+        placeholder="Company Name"
+        className="job-form-input"
       />
       <input
         type="date"
