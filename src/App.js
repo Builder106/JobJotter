@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import JobForm from './components/JobForm';
-import JobList from './components/JobList';
-import Footer from './components/Footer';
-import Modal from './components/Modal';
+import Navbar from './components/Navbar/Navbar';
+import JobForm from './components/JobForm/JobForm';
+import JobList from './components/JobList/JobList';
+import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
 import './App.css';
 
 function App() {

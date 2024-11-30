@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './JobForm.css';
 import { Autocomplete } from '../../Autocomplete/Autocomplete';
-import '../Autocomplete/style.css';
+import '../../Autocomplete/style.css';
 
 function JobForm({ addApplication }) {
   const [jobTitle, setJobTitle] = useState('');

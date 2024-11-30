@@ -1,5 +1,5 @@
 import React from 'react';
-import JobItem from './JobItem';
+import JobItem from '../JobItem/JobItem';
 
 function JobList({ applications, deleteApplication, updateApplicationStatus }) {
   return (
