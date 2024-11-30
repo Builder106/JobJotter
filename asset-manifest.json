@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/JobJotter/static/css/main.d8738aa8.css",
-    "main.js": "/JobJotter/static/js/main.b2d2eb84.js",
+    "main.css": "/JobJotter/static/css/main.55d72173.css",
+    "main.js": "/JobJotter/static/js/main.c2debd14.js",
     "static/js/488.04d9cd9d.chunk.js": "/JobJotter/static/js/488.04d9cd9d.chunk.js",
     "static/media/300x300_notext_logo.png": "/JobJotter/static/media/300x300_notext_logo.24395ad6b006061c7ce3.png",
     "index.html": "/JobJotter/index.html",
-    "main.d8738aa8.css.map": "/JobJotter/static/css/main.d8738aa8.css.map",
-    "main.b2d2eb84.js.map": "/JobJotter/static/js/main.b2d2eb84.js.map",
+    "main.55d72173.css.map": "/JobJotter/static/css/main.55d72173.css.map",
+    "main.c2debd14.js.map": "/JobJotter/static/js/main.c2debd14.js.map",
     "488.04d9cd9d.chunk.js.map": "/JobJotter/static/js/488.04d9cd9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8738aa8.css",
-    "static/js/main.b2d2eb84.js"
+    "static/css/main.55d72173.css",
+    "static/js/main.c2debd14.js"
   ]
 }
