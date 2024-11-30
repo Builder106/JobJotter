@@ -47,13 +47,13 @@ function JobItem({ application, deleteApplication, updateApplicationStatus }) {
       )}</p>
       {isEditing ? (
         <>
-          <button onClick={handleSaveClick}>Save</button>
-          <button onClick={handleCancelClick}>Cancel</button>
+          <button className="save-button" onClick={handleSaveClick}>Save</button>
+          <button className="cancel-button" onClick={handleCancelClick}>Cancel</button>
         </>
       ) : (
-        <button onClick={handleEditClick}>Edit</button>
+        <button className="edit-button" onClick={handleEditClick}>Edit</button>
       )}
-      <button onClick={deleteApplication}>Delete</button>
+      <button className="delete-button" onClick={deleteApplication}>Delete</button>
     </div>
   );
 }

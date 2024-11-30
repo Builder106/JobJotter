@@ -12,7 +12,7 @@ export const SWrapper = styled.div`
 export const SProvidedBy = styled.p`
   color: ${color.black500};
   font-size: ${fontSize.sm};
-  bottom: ${space[40]};
+  bottom: ${space[30]}; 
   position: absolute;
   z-index: 50;
   right: 0;

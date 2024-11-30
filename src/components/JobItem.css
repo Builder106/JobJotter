@@ -1,8 +1,54 @@
 .job-item {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background-color: #f0feff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+   border: 1px solid #ccc;
+   padding: 20px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   background-color: #f0feff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .job-item button {
+   padding: 8px 12px;
+   margin: 5px;
+   font-size: 1em;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .job-item .edit-button {
+   background-color: #4caf50;
+   color: white;
+ }
+ 
+ .job-item .edit-button:hover {
+   background-color: #45a049;
+ }
+ 
+ .job-item .delete-button {
+   background-color: #f44336;
+   color: white;
+ }
+ 
+ .job-item .delete-button:hover {
+   background-color: #e53935;
+ }
+ 
+ .job-item .save-button {
+   background-color: #2196f3;
+   color: white;
+ }
+ 
+ .job-item .save-button:hover {
+   background-color: #1e88e5;
+ }
+ 
+ .job-item .cancel-button {
+   background-color: #9e9e9e;
+   color: white;
+ }
+ 
+ .job-item .cancel-button:hover {
+   background-color: #757575;
+ }

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import JobForm from './components/JobForm';
 import JobList from './components/JobList';
 import Footer from './components/Footer';
+import Modal from './components/Modal';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   const [jobSearchQuery, setJobSearchQuery] = useState('');
   const [companySearchQuery, setCompanySearchQuery] = useState('');
   const [searchTriggered, setSearchTriggered] = useState(false);
+  const [modals, setModals] = useState([]);
 
   useEffect(() => {
     localStorage.setItem('applications', JSON.stringify(applications));
@@ -21,10 +23,12 @@ function App() {
 
   const addApplication = (application) => {
     setApplications([...applications, application]);
+    addModal('Application Added');
   };
 
   const deleteApplication = (index) => {
     setApplications(applications.filter((_, i) => i !== index));
+    addModal('Application Deleted');
   };
 
   const updateApplicationStatus = (application, newStatus) => {
@@ -43,6 +47,17 @@ function App() {
 
   const handleSearchClick = () => {
     setSearchTriggered(true);
+  };
+
+  const addModal = (message) => {
+    setModals((prevModals) => [
+      ...prevModals,
+      { id: Date.now(), message }
+    ]);
+  };
+
+  const removeModal = (id) => {
+    setModals((prevModals) => prevModals.filter(modal => modal.id !== id));
   };
 
   const filteredApplications = applications.filter(application =>
@@ -86,6 +101,17 @@ function App() {
         />
       </div>
       <Footer />
+      {modals.map((modal, index) => (
+        <Modal
+          key={modal.id}
+          show={true}
+          onClose={() => removeModal(modal.id)}
+          duration={5000}
+          position={index}
+        >
+          <h4>{modal.message}</h4>
+        </Modal>
+      ))}
     </div>
   );
 }
